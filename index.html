@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eventos Deportivos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">Deportes</div>
+  <nav>
+    <a href="#home">Inicio</a>
+    <a href="#ranking">Ranking</a>
+  </nav>
+</header>
+<main id="home">
+  <section id="filters">
+    <select id="filterCategory">
+      <option value="">Todas las categorías</option>
+    </select>
+    <select id="filterLocation">
+      <option value="">Todas las ubicaciones</option>
+    </select>
+    <button id="sortRating">Más valorados</button>
+    <button id="sortClosing">Próximos a cerrar</button>
+  </section>
+  <section id="events" class="grid"></section>
+  <section id="ranking">
+    <h2>Ranking por valoración</h2>
+    <ol id="rankRating"></ol>
+    <h2>Próximos a cerrar inscripciones</h2>
+    <ol id="rankClosing"></ol>
+  </section>
+</main>
+<div id="detailModal" class="modal hidden"></div>
+<script src="app.js"></script>
+</body>
+</html>
